@@ -20,6 +20,6 @@ const connect = function() {
 
 const util = {
   connect
-}
+};
 
 module.exports = util;
