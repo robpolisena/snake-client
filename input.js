@@ -12,6 +12,9 @@ const setupInput = function(conn) {
   let s = 'Move: down';
   let a = 'Move: left';
   let d = 'Move: right';
+  let z = 'Say: U Win';
+  let x = 'Say: Go';
+  let c = 'Say: Bye';
   
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -30,6 +33,15 @@ const setupInput = function(conn) {
     }
     if (key === 'd') {
       connection.write(d);
+    }
+    if (key === 'z') {
+      connection.write(z);
+    }
+    if (key === 'x') {
+      connection.write(x);
+    }
+    if (key === 'c') {
+      connection.write(c);
     }
   });
   return stdin;
